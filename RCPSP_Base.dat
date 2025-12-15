@@ -1,0 +1,23 @@
+/*********************************************
+ * OPL 12.10.0.0 Data
+ * Author: Ali Atabaki
+ * Creation Date: Nov 24, 2025 at 11:44:19 PM
+ *********************************************/
+
+ SheetConnection excelsheet("UniRcpsp0.xlsx");
+ 
+ 
+ nActivities from SheetRead(excelsheet,"nActivities");
+ nResources from SheetRead(excelsheet,"nResource");
+ Horizon from SheetRead(excelsheet,"Horizon");
+ 
+ Duration from SheetRead(excelsheet,"Durations");
+ ResourceRequirement from SheetRead(excelsheet,"ReqRes");
+ ResourceCapacity from SheetRead(excelsheet,"maxRes");
+ PrecedenceRelation from SheetRead(excelsheet,"Pre");
+
+  /*/TVM
+ InterestRate from SheetRead(excelsheet,"IntR");
+ InflationRate from SheetRead(excelsheet,"InfR");
+ DailyActivityCost from SheetRead(excelsheet,"Cost");
+ */
